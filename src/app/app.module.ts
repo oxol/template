@@ -10,6 +10,8 @@ import { UeberUnsComponent } from './ueber-uns/ueber-uns.component';
 import { KontaktComponent } from './kontakt/kontakt.component';
 import { StationaereArbeitComponent } from './stationaere-arbeit/stationaere-arbeit.component';
 import { StellenausschreibungenComponent } from './stellenausschreibungen/stellenausschreibungen.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {CustomMaterialModule} from "./core/material.module";
 
 
 @NgModule({
@@ -25,7 +27,9 @@ import { StellenausschreibungenComponent } from './stellenausschreibungen/stelle
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    CustomMaterialModule
   ],
   providers: [],
   bootstrap: [AppComponent]
