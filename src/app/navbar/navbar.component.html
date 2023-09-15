@@ -9,47 +9,49 @@
 <mat-sidenav-container class="example-container">
   <mat-sidenav id="nav" #drawer mode="side" opened role="navigation">
     <mat-accordion>
-    <mat-nav-list>
-      <a  routerLink='/landing'>
-        <img id="logo" src="../../assets/Icons/zapp.png">
-      </a>
-      <a class="nav-item nav-distance" mat-list-item routerLink='/ueberuns'>Über uns</a>
-
-      <mat-expansion-panel [class.mat-elevation-z0]="true">
-        <mat-expansion-panel-header class="nav-distance" routerLink='/kontakt'>
-          Ambulante Hilfen
-      </mat-expansion-panel-header>
       <mat-nav-list>
-      <a mat-list-item routerLink='/bruecke'>SPFH</a>
-      <a mat-list-item routerLink='/wohngruppen' style="margin-bottom: 10%; margin-top: 10%;">Erziehungsbeistandschaft</a>
-      <a mat-list-item routerLink='/wohngruppen'>Betreuungsweisung</a>
-    </mat-nav-list>
-      </mat-expansion-panel>
+        <a routerLink='/landing'>
+          <img id="logo" src="../../assets/Icons/zapp.png">
+        </a>
+        <a class="nav-item nav-distance" mat-list-item routerLink='/ueberuns'>Über uns</a>
 
-      <mat-expansion-panel class="expansion" [class.mat-elevation-z0]="true" [class.]>
-        <mat-expansion-panel-header class="nav-distance" routerLink='/kontakt'>
-          Stationäre Hilfen
-      </mat-expansion-panel-header>
-      <mat-nav-list>
-        <mat-nav-list>
-        <a mat-list-item routerLink='/bruecke'>Wohngruppe 1</a>
-        <a mat-list-item routerLink='/wohngruppen' style="margin-bottom: 10%; margin-top: 10%;">Wohngruppe 2</a>
-      <a mat-list-item routerLink='/bruecke' style="margin-bottom: 10%; margin-top: 10%;">Brücke 1</a>
-      <a mat-list-item routerLink='/wohngruppen' style="margin-bottom: 10%; margin-top: 10%;">Brücke 2</a>
-      <a mat-list-item routerLink='/wohnraum'>Trägereigener Wohnraum</a>
-    </mat-nav-list>
-    
-      
-    </mat-nav-list>
-      </mat-expansion-panel>
-      <a class="nav-item nav-distance" mat-list-item routerLink='/kontakt'>Kontakt</a>
-      <a class="nav-item nav-distance" mat-list-item routerLink='/stellenausschreibungen'>Stellenausschreibungen</a>
-    </mat-nav-list>
-  </mat-accordion>
+        <mat-expansion-panel [class.mat-elevation-z0]="true">
+          <mat-expansion-panel-header class="nav-distance" routerLink='/kontakt'>
+            Ambulante Hilfen
+          </mat-expansion-panel-header>
+          <mat-nav-list>
+            <a mat-list-item routerLink='/bruecke'>SPFH</a>
+            <a mat-list-item routerLink='/wohngruppen'
+              style="margin-bottom: 10%; margin-top: 10%;">Erziehungsbeistandschaft</a>
+            <a mat-list-item routerLink='/wohngruppen'>Betreuungsweisung</a>
+          </mat-nav-list>
+        </mat-expansion-panel>
+
+        <mat-expansion-panel class="expansion" [class.mat-elevation-z0]="true" [class.]>
+          <mat-expansion-panel-header class="nav-distance" routerLink='/kontakt'>
+            Stationäre Hilfen
+          </mat-expansion-panel-header>
+          <mat-nav-list>
+            <mat-nav-list>
+              <a mat-list-item routerLink='/bruecke'>Wohngruppe 1</a>
+              <a mat-list-item routerLink='/wohngruppen' style="margin-bottom: 10%; margin-top: 10%;">Wohngruppe 2</a>
+              <a mat-list-item routerLink='/bruecke' style="margin-bottom: 10%; margin-top: 10%;">Brücke 1</a>
+              <a mat-list-item routerLink='/wohngruppen' style="margin-bottom: 10%; margin-top: 10%;">Brücke 2</a>
+              <a mat-list-item routerLink='/wohnraum'>Trägereigener Wohnraum</a>
+            </mat-nav-list>
+
+
+          </mat-nav-list>
+        </mat-expansion-panel>
+        <a class="nav-item nav-distance" mat-list-item routerLink='/kontakt'>Kontakt</a>
+        <a class="nav-item nav-distance" mat-list-item routerLink='/stellenausschreibungen'>Stellenausschreibungen</a>
+      </mat-nav-list>
+    </mat-accordion>
   </mat-sidenav>
-  <mat-sidenav-content>
-    <router-outlet></router-outlet>
-  </mat-sidenav-content>
+    <mat-sidenav-content>
+      <router-outlet></router-outlet>
+    </mat-sidenav-content>
+    
 </mat-sidenav-container>
 <!--<mat-drawer-container class="example-container">
   <mat-drawer #drawer mode="side" opened>

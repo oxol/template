@@ -6,6 +6,7 @@ import { StationaereArbeitComponent } from './stationaere-arbeit/stationaere-arb
 import { KontaktComponent } from './kontakt/kontakt.component';
 import { UeberUnsComponent } from './ueber-uns/ueber-uns.component';
 import { StellenausschreibungenComponent } from './stellenausschreibungen/stellenausschreibungen.component';
+import { AnsprechpartnerComponent } from './ansprechpartner/ansprechpartner.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/landing', pathMatch: 'full' },
@@ -15,6 +16,7 @@ const routes: Routes = [
   { path: 'kontakt', component: KontaktComponent },
   { path: 'ueberuns', component: UeberUnsComponent },
   { path: 'stellenausschreibungen', component: StellenausschreibungenComponent },
+  { path: 'ansprechpartner', component: AnsprechpartnerComponent},
 ];
 
 @NgModule({

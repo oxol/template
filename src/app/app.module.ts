@@ -12,6 +12,8 @@ import { StationaereArbeitComponent } from './stationaere-arbeit/stationaere-arb
 import { StellenausschreibungenComponent } from './stellenausschreibungen/stellenausschreibungen.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {CustomMaterialModule} from "./core/material.module";
+import { AnsprechpartnerComponent } from './ansprechpartner/ansprechpartner.component';
+
 
 
 @NgModule({
@@ -23,7 +25,8 @@ import {CustomMaterialModule} from "./core/material.module";
     UeberUnsComponent,
     KontaktComponent,
     StationaereArbeitComponent,
-    StellenausschreibungenComponent
+    StellenausschreibungenComponent,
+    AnsprechpartnerComponent
   ],
   imports: [
     BrowserModule,
